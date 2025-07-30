@@ -16,7 +16,8 @@ Note: All other settings remain at their default values. Make sure to enable RDP
 1. Go to Azure portal -> Virtual Machines -> choose the VM that you created -> copy the Public IP Address 
 2. Go to Remote Desktop on your PC in Start Menu -> paste the Public IP Address -> Click on Connect -> fill the username and password (Credentials) -> Click on OK
 ![ConnecttoVM](images/connect-rdp-3.png)
-3. Click on **Yes** 
+3. Click on Yes
+   
 ![ConnecttoVM](images/connect-rdp-6.png)
 
 ### 2nd Method
@@ -31,6 +32,7 @@ Note: All other settings remain at their default values. Make sure to enable RDP
 5. Fill your credentials and then click on OK
 ![ConnecttoVM](images/connect-rdp-5.png)
 6. Click on Yes
+   
 ![ConnecttoVM](images/connect-rdp-6.png)
 
 
