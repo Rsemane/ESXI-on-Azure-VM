@@ -13,7 +13,7 @@ The primary goal of this lab is to facilitate the migration of on-premises virtu
 
 The following diagram illustrates the nested ESXi deployment on Azure:
 
-![Architecture Diagram2](images/Architecture-Diagram.png)
+![Architecture Diagram](images/Architecture-Diagram.png)
 
 # 📦 Deployment Guide
 Main problem in this deployment is when running ESXI ISO not customised, you will get a message during installation :
