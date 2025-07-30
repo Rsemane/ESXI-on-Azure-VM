@@ -13,6 +13,8 @@ The primary goal of this lab is to facilitate the migration of on-premises virtu
 
 The following diagram illustrates the nested ESXi deployment on Azure:
 
-!Architecture Diagram
+!Architecture-Diagram
 
 <img width="670" height="656" alt="Architecture-Diagram" src="images/Architecture-Diagram.png" />
+
+
