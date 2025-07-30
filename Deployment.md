@@ -50,6 +50,7 @@ Note: All other settings remain at their default values. Make sure to enable RDP
 
 ## Step 3: Install Hyper-V
 Right click on the Window Logo -> Click on **Windows PowerShell (Admin)**
+
 ![PowershellAdmin](images/Powershell-admin.png)
 
 ```powershell
@@ -58,7 +59,10 @@ Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 The command will install Hyper-V Feature with Hyper-V Manager and then restart the Server
 
 ## Step 4: Enable Nested Virtualization
-!Step 4
+On Azure VM created, you have inside it ESXi VM or another OS + Hyper-V (level 3 - Architecture Diagram), pick up the name of the VM and use the command below on the host (level 2 - Architecture Diagram) 
+```powershell
+Set-VMProcessor -VMName "<vm-name>" -ExposeVirtualizationExtensions $true
+```
 
 ## Step 5: Install and Configure ESXi
 ...
