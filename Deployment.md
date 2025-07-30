@@ -58,14 +58,16 @@ Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 ```
 The command will install Hyper-V Feature with Hyper-V Manager and then restart the Server
 
-## Step 4: Enable Nested Virtualization
+## Step 4: Creating ESXI VM on the Hyper-V
+
+## Step 5: Enable Nested Virtualization
 On Azure VM created, you have inside it ESXi VM or another OS + Hyper-V (level 3 - Architecture Diagram), pick up the name of the VM and use the command below on the host (level 2 - Architecture Diagram) 
 ```powershell
 Set-VMProcessor -VMName "<vm-name>" -ExposeVirtualizationExtensions $true
 ```
 
-## Step 5: Install and Configure ESXi
+## Step 6: Install and Configure ESXi on the Hyper-V
 ...
 
-## Step 6: Create VMs Inside ESXi
+## Step 7: Create VMs Inside ESXi
 ...
