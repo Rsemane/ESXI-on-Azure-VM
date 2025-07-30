@@ -20,6 +20,13 @@ The following diagram illustrates the nested ESXi deployment on Azure:
 1. Create Azure VM with nested Virtualization
 2. Install Hyper-V
 3. Upload and install ESXi custom ISO
+4. Configure ESXi
+5. Create VMs inside ESXi
+
+## Resources
+- ESXi ISO
+- Azure VM specs
+- Networking setup
 
 
 
