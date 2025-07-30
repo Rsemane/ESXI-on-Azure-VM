@@ -10,6 +10,6 @@ Lab Objective:
 The primary goal of this lab is to facilitate the migration of on-premises virtual machines (VMware Machines) to Azure, by simulating a fully controlled hypervisor environment within the cloud.
 
 # Architecture Diagram
-![Architecture-Diagram
+![Architecture-Diagram.png
 
 
