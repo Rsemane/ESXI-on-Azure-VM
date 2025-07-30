@@ -1,2 +1,3 @@
 # ESXI-on-Azure-VM
-Nested in Nested Azure VM 
+VMware ESXi in a nested virtualization setup on Azure
+
