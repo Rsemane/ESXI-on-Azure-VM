@@ -13,10 +13,9 @@ The primary goal of this lab is to facilitate the migration of on-premises virtu
 
 The following diagram illustrates the nested ESXi deployment on Azure:
 
-![Architecture Diagram](images/Architecture-Diagram.png)
+![Architecture Diagram2](images/Architecture-Diagram.png)
 
 # Deployment Stages
-!Deployment Stages
 ## Steps
 1. Create Azure VM with nested Virtualization
 2. Install Hyper-V
