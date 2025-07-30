@@ -7,7 +7,7 @@ Hypervisor: Hyper-V must be enabled inside the VM.
 
 ## Step 1: Create Azure VM with Nested Virtualization
 ![CreationofVM](images/nested-vm-azure-portal.png)
-![CreationofVM](images/nested-vm-azure-portal2.png)
+![CreationofVM](images/nested-vm-azure-portal-2.png)
 
 ## Step 2: Enable Nested Virtualization
 !Step 2
