@@ -20,15 +20,13 @@ The following diagram illustrates the nested ESXi deployment on Azure:
 For detailed deployment steps with<img width="670" height="656" alt="Architecture-Diagram" src="https://github.com/user-attachments/assets/853391fd-f105-4174-9a8c-06b1b1085219" />
  screenshots, see Deployment.md
 
+<img width="30" height="30" src="https://github.com/user-attachments/assets/8f3fccee-4ff8-4f7e-8d40-ef66d415a724"/> Note: Be aware that issues may occur because running ESXi on a Hyper-V VM is not officially supported.
 
 ## Resources
 - ESXi ISO
 - Azure VM specs
 - Networking setup
   
-
-<img width="30" height="30" src="https://github.com/user-attachments/assets/8f3fccee-4ff8-4f7e-8d40-ef66d415a724"/> Note: Be aware that issues may occur because running ESXi on a Hyper-V VM is not officially supported.
-
 # Conclusion
 Configuring an environment to run an ESXi hypervisor on a Hyper-V VM is a tricky process, and is not officially supported by vendors. However, you can deploy ESXi on a Hyper-V VM for educational and testing purposes. You can try to install ESXi hypervisor on a Hyper-V VM at your own responsibility. Do not use such solution in a production environment.
 
