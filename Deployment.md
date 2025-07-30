@@ -9,10 +9,14 @@ Hypervisor: Hyper-V must be enabled inside the VM.
 ![CreationofVM](images/nested-vm-azure-portal.png)
 ![CreationofVM](images/nested-vm-azure-portal-2.png)
 
-## Step 2: Enable Nested Virtualization
-!Step 2
+Note: All other settings remain at their default values.
 
-## Step 3: Install Hyper-V and Upload ESXi ISO
+## Step 2: Install Hyper-V
+```powershell
+Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
+
+
+## Step 3: Enable Nested Virtualization
 !Step 3
 
 ## Step 4: Install and Configure ESXi
