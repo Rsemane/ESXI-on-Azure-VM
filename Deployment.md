@@ -49,6 +49,9 @@ Note: All other settings remain at their default values. Make sure to enable RDP
 
 
 ## Step 3: Install Hyper-V
+Right click on the Window Logo -> Click on **Windows PowerShell (Admin)**
+![PowershellAdmin](images/Powershell-admin.png)
+
 ```powershell
 Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 ```
