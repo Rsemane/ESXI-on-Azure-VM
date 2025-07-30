@@ -16,8 +16,6 @@ The following diagram illustrates the nested ESXi deployment on Azure:
 ![Architecture Diagram2](images/Architecture-Diagram.png)
 
 # 📦 Deployment Guide
-
-<img width="670" height="656" alt="Architecture-Diagram" src="https://github.com/user-attachments/assets/853391fd-f105-4174-9a8c-06b1b1085219" />
 For detailed deployment steps with screenshots, see Deployment.md
 
 <img width="30" height="30" src="https://github.com/user-attachments/assets/8f3fccee-4ff8-4f7e-8d40-ef66d415a724"/> Note: Be aware that issues may occur because running ESXi on a Hyper-V VM is not officially supported.
