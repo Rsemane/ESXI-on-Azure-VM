@@ -15,6 +15,7 @@ Note: All other settings remain at their default values.
 ```powershell
 Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 ```
+The command will install Hyper-V Feature with Hyper-V Manager and then restart the Server
 
 ## Step 3: Enable Nested Virtualization
 !Step 3
