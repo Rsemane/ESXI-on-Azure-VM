@@ -15,4 +15,4 @@ The following diagram illustrates the nested ESXi deployment on Azure:
 
 !Architecture Diagram
 
-<img width="670" height="656" alt="Architecture-Diagram" src="https://github.com/user-attachments/assets/555ac13b-c1d5-40e1-b946-ccd3bf5e0cc6" />
+<img width="670" height="656" alt="Architecture-Diagram" src="images/Architecture-Diagram.png" />
