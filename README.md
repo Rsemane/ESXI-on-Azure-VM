@@ -32,4 +32,5 @@ For detailed deployment steps with screenshots, see Deployment.md
 # Conclusion
 Configuring an environment to run an ESXi hypervisor on a Hyper-V VM is a tricky process, and is not officially supported by vendors. However, you can deploy ESXi on a Hyper-V VM for educational and testing purposes. You can try to install ESXi hypervisor on a Hyper-V VM at your own responsibility. Do not use such solution in a production environment.
 
-
+# Thanks to
+https://www.nakivo.com/blog/install-esxi-hyper-v
