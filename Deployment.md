@@ -159,6 +159,10 @@ New-NetNat -Name "NATNetwork" -InternalIPInterfaceAddressPrefix 192.168.100.0/24
 
 ![SettingVM](images/Settings-VM-4.png)
 
+Choose the name of the VSwitch created in step 5. In my case is NAT-Switch
+
+![SettingVM](images/Settings-VM-5.png)
+
 
 
 
