@@ -110,21 +110,61 @@ New-NetNat -Name "NATNetwork" -InternalIPInterfaceAddressPrefix 192.168.100.0/24
 
 ![CreatingVM](images/Creating-ESXI-VM-2.png) 
 
-2. Specify a name for the virtual machine (e.g., ESXi6) and choose a storage location based on your preferences—ideally on a disk that doesn’t contain an operating system.
+2. Specify a name for the virtual machine (e.g., ESXi6) and choose a storage location based on your preferences—ideally on a disk that doesn’t contain an operating system. Click **Next**
    
 ![CreatingVM](images/Creating-ESXI-VM-3.png) 
 
-3. Select Generation 1 for your VM in order to make it possible to use a legacy network adapter with the compatible drivers that you have integrated into the ESXi installation image.
+3. Select Generation 1 for your VM in order to make it possible to use a legacy network adapter with the compatible drivers that you have integrated into the ESXi installation image. Click **Next**
    
 ![CreatingVM](images/Creating-ESXI-VM-4.png)
 
 **PS: Even if you create Legacy network and use official ISO not custom version 6, you will get this message**
 ![CreatingVM](images/no_adapter.png)
 
+4. Assign at least 4 GB of memory. Using Dynamic Memory for this virtual machine is not recommended. Click **Next**
+   
+![CreatingVM](images/Creating-ESXI-VM-5.png)
+
+5. Configure the networking settings as desired—using the “None” option or any available configuration—since the VM’s network must be manually reconfigured after creation. Note that selecting a Legacy network adapter during VM setup isn't supported, so you’ll need to remove the default adapter afterward and create a Legacy one manually. Click **Next**
+
+![CreatingVM](images/Creating-ESXI-VM-6.png)
+
+6. Create a new virtual disk, allocating 30 GB as a starting point. If you plan to run multiple VMware virtual machines on your ESXi host, consider assigning a larger size upfront, or add additional virtual disks later as needed. You may also opt for a dynamically expanding disk to optimize storage use. Verify the disk’s name and location, then proceed by clicking **Next**.
+
+![CreatingVM](images/Creating-ESXI-VM-7.png)
+
+7. Select Install an operating system from a bootable CD/DVD-ROM in Installation Options. Use the ISO image file that you have prepared beforehand (ESXi-6.x-custom.iso in this example). Click **Next**.
+   
+![CreatingVM](images/Creating-ESXI-VM-8.png)
+
+8. Check the summary and click **Finish** to finalize the VM creation.
+   
+![CreatingVM](images/Creating-ESXI-VM-9.png)
+
+
+## Step 6: Setting up ESXi VM on Hyper-V
+1. Once a new Hyper-V virtual machine is created, edit the VM settings. Right-click the name of your VM and select **Settings** in the context menu.
+   
+![SettingVM](images/Settings-VM-1.png)
+
+2. In the left pane of the window in the Hardware section, select Processor and set the number of virtual processors to 4 or more (1 processor is used by default). Otherwise, you will get errors during booting up phase. 
+
+![SettingVM](images/Settings-VM-2.png)
+
+3. Select the network adapter. First, remove the existing network adapter created by default. In order to do this, click the **Remove** button.
+   
+![SettingVM](images/Settings-VM-3.png)
+
+4. Add a legacy network adapter to the VM. In the left pane of the window in the Hardware section click Add Hardware. In the right pane select Legacy Network Adapter and click **Add**.
+
+![SettingVM](images/Settings-VM-4.png)
 
 
 
 
+
+
+------------------------
 
 
 
