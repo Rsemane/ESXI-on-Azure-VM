@@ -74,13 +74,15 @@ New-VMSwitch -Name "NAT-Switch" -SwitchType Internal
 ```powershell
 Get-NetAdapter | Where-Object { $_.InterfaceDescription -like "Hyper-V*" }
 ```
+![vswitchnat](images/Networkhyper-6.png) 
+
 3. **Assign an IP Address to the VSwitch**
 You can use a subnet mask of your choice and IP address RFC 1918. The value of ifIndex is one gathered in the step 2 
 
 ```powershell
 New-NetIPAddress -IPAddress 192.168.100.1 -PrefixLength 24 -InterfaceIndex <ifIndex>
 ```
-![vswitchnat](images/Networkhyper-2.png) 
+![vswitchnat](images/Networkhyper-7.png) 
 
 or you can use this command and bypass step 2
 
