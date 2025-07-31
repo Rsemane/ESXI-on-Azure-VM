@@ -58,16 +58,50 @@ Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 ```
 The command will install Hyper-V Feature with Hyper-V Manager and then restart the Server
 
-## Step 4: Creating ESXI VM on the Hyper-V
+## Step 4: Creating Hyper-V NAT Network
+The objective is to connect a network interface to ESXi, enabling it to access external networks by routing traffic through the public IP address assigned to the Azure virtual machine.
+To do the steps below, open Cmd in admin and copy the commands. 
 
-## Step 5: Enable Nested Virtualization
+1. **Creating VSwitch is a virtual network in Hyper-V named NAT-Switch with a type internal.**
+
+```powershell
+New-VMSwitch -Name "NAT-Switch" -SwitchType Internal
+```
+2. **Find the Interface Index of the New VSwitch**
+
+```powershell
+Get-NetAdapter | Where-Object { $_.InterfaceDescription -like "Hyper-V*" }
+```
+3. **Assign an IP Address to the VSwitch**
+You can use a subnet mask of your choice and IP address RFC 1918. The value of ifIndex is one gathered in the step 2 
+
+```powershell
+New-NetIPAddress -IPAddress 192.168.100.1 -PrefixLength 24 -InterfaceIndex <ifIndex>
+```
+
+4. **Create Network Natting**
+The 192.168.100.0/24 network will be NATed through the public IP address of the Azure virtual machine. For example, a VM with a private IP of 192.168.100.2 will have its outbound traffic translated to the VM’s public IP.
+   
+```powershell
+New-NetNat -Name "NATNetwork" -InternalIPInterfaceAddressPrefix 192.168.100.0/24
+```
+
+
+   
+
+
+
+
+## Step 5: Creating ESXI VM on the Hyper-V
+
+## Step : Enable Nested Virtualization
 On Azure VM created, you have inside it ESXi VM or another OS + Hyper-V (level 3 - Architecture Diagram), pick up the name of the VM and use the command below on the host (level 2 - Architecture Diagram) 
 ```powershell
 Set-VMProcessor -VMName "<vm-name>" -ExposeVirtualizationExtensions $true
 ```
 
-## Step 6: Install and Configure ESXi on the Hyper-V
+## Step : Install and Configure ESXi on the Hyper-V
 ...
 
-## Step 7: Create VMs Inside ESXi
+## Step : Create VMs Inside ESXi
 ...
