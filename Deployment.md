@@ -104,8 +104,30 @@ New-NetNat -Name "NATNetwork" -InternalIPInterfaceAddressPrefix 192.168.100.0/24
 
 
 ## Step 5: Creating ESXI VM on the Hyper-V
-Download Custom ESXi ISO image from resources. In this Image you have the net-tulip driver that works with hyper-V. The Image is done by ESXI Customizer tool by ...xxx.xxx 
+**Prerequisite:** Download Custom ESXi ISO image from resources. In this Image you have the net-tulip driver that works with hyper-V. The Image is done by ESXI Customizer tool by ...xxx.xxx 
 1. Open Hyper-V manager, click Action > New > Virtual Machine.
+![CreatingVM](images/Creating-ESXI-VM-1.png) 
+
+![CreatingVM](images/Creating-ESXI-VM-2.png) 
+
+2. Specify a name for the virtual machine (e.g., ESXi6) and choose a storage location based on your preferences—ideally on a disk that doesn’t contain an operating system.
+   
+![CreatingVM](images/Creating-ESXI-VM-3.png) 
+
+3. Select Generation 1 for your VM in order to make it possible to use a legacy network adapter with the compatible drivers that you have integrated into the ESXi installation image.
+   
+![CreatingVM](images/Creating-ESXI-VM-4.png)
+
+**Even if you create Legacy network and use official ISO not custom version 6, you will get this message**
+![CreatingVM](images/no_adapter.png)
+
+
+
+
+
+
+
+
 
 ## Step : Enable Nested Virtualization
 On Azure VM created, you have inside it ESXi VM or another OS + Hyper-V (level 3 - Architecture Diagram), pick up the name of the VM and use the command below on the host (level 2 - Architecture Diagram) 
