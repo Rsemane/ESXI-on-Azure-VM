@@ -168,6 +168,8 @@ Choose the name of the VSwitch created in step 5. In my case is NAT-Switch
 
 
 
+
+
 ------------------------
 
 
