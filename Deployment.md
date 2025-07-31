@@ -118,7 +118,7 @@ New-NetNat -Name "NATNetwork" -InternalIPInterfaceAddressPrefix 192.168.100.0/24
    
 ![CreatingVM](images/Creating-ESXI-VM-4.png)
 
-**Even if you create Legacy network and use official ISO not custom version 6, you will get this message**
+**PS: Even if you create Legacy network and use official ISO not custom version 6, you will get this message**
 ![CreatingVM](images/no_adapter.png)
 
 
