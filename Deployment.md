@@ -84,6 +84,10 @@ or you can use this command and bypass step 2
 ```powershell
 New-NetIPAddress -IPAddress 192.168.100.1 -PrefixLength 24 -InterfaceAlias "vEthernet (NAT-Switch)"
 ```
+
+**The steps above is like you have a network card and you put a static IP inside the TCP/IPv4 network settings.**
+
+
 4. **Create Network Natting**
 The 192.168.100.0/24 network will be NATed through the public IP address of the Azure virtual machine. For example, a VM with a private IP of 192.168.100.2 will have its outbound traffic translated to the VM’s public IP.
    
