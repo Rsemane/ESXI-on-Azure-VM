@@ -79,6 +79,11 @@ You can use a subnet mask of your choice and IP address RFC 1918. The value of i
 New-NetIPAddress -IPAddress 192.168.100.1 -PrefixLength 24 -InterfaceIndex <ifIndex>
 ```
 
+or you can use this command and bypass step 2
+
+```powershell
+New-NetIPAddress -IPAddress 192.168.100.1 -PrefixLength 24 -InterfaceAlias "vEthernet (NAT-Switch)"
+```
 4. **Create Network Natting**
 The 192.168.100.0/24 network will be NATed through the public IP address of the Azure virtual machine. For example, a VM with a private IP of 192.168.100.2 will have its outbound traffic translated to the VM’s public IP.
    
