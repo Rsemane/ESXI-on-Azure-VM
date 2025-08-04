@@ -178,5 +178,22 @@ This will allow you to modify the boot options. Append the following parameter t
 
 ![InstallESXi](images/Installing-ESXI-1.png)
 
+
+### Why TAB Detects IDE Disk but Shift+O Doesn't
+This behavior likely stems from how the boot parameters are parsed and what drivers
+are loaded depending on the boot method:
+ ##### TAB Boot (Legacy Bootloader Behavior)
+. In some custom ISOs, pressing TAB allows you to edit the boot command line directly
+in a legacy isolinux/syslinux environment.
+. This method may implicitly load legacy drivers, including VMKLinux-based IDE
+drivers, which are deprecated but still present in some custom builds.
+. If your ISO includes legacy support, TAB might trigger detection of older IDE disks.
+ ##### Shift+O Boot (Modern Boot Option)
+. Shift+O is used to append kernel parameters in the newer ESXi bootloader.
+. If your custom ISO is built on a newer ESXi version (e.g., 7.x or 8.x), it may default to
+native drivers only, excluding legacy VMKLinux drivers.
+. This can result in IDE disks not being detected,
+included or loaded.
+
 ## Step : Create VMs Inside ESXi
 ...
