@@ -244,7 +244,7 @@ included or loaded.
 ![InstallESXi](images/Installing-ESXI-10.png)
 
 
-## Configuring Network Settings
+## Step 9: Configuring Network Settings
 
 Since our new NAT-Switch has not a DHCP Server attached to it, we will get APIPA (Automatic Private Internet Protocol Addressing) IP 169.254.X.X
 
@@ -277,12 +277,51 @@ Since our new NAT-Switch has not a DHCP Server attached to it, we will get APIPA
 
 
 
+## Step 10 : Open VSphere Client 
+
+1. In order to connect to ESXi management Web portal in Azure, you have to use IPV6. Because Azure does not support bridging and using NAT or port forward it does not work. (In case you make it work contact me please on Linkedin). Copy the IPV6 and open a browser. 
+
+![InstallESXi](images/ManageESXi-1.png)
+
+![InstallESXi](images/ManageESXi-2.png)
+
+![InstallESXi](images/ManageESXi-3.png)
 
 
+## Step 11 : Create VMs Inside ESXi
+1. Click on **Virtual Machines** inside the Navigator Tab. Click on ** Create/Register VM **
+   
+![InstallESXi](images/ManageESXi-4.png)
 
+2. Select creation type. Select Create a new virtual machine and click **Next**.
 
+![InstallESXi](images/Create-VM-1.png)
 
+3. Select a name and guest OS. Enter your VM name, select the compatibility, guest OS family as well as version. Click **Next**.
 
+ ![InstallESXi](images/Create-VM-2.png)
 
-## Step : Create VMs Inside ESXi
-...
+4. Select storage. In the current example only one datastore is available. Click the datastore you want to use for storing the VM files and click **Next**.
+
+ ![InstallESXi](images/Create-VM-3.png)
+
+5. Customize your settings. Set the parameters of virtual hardware. There are two options available for CD/DVD drive used by VM: Host device and ESXi datastore. Use the second option and upload the ISO installation image  of the operating system to the local datastore on the ESXi host.
+
+  ![InstallESXi](images/Create-VM-4.png)
+
+6. Ready to complete. Check the VM configuration summary and click **Finish** to create the VM.
+ ![InstallESXi](images/Create-VM-5.png)
+
+7. Mount the ISO inside ESXi VM, since in step 6, I chose Host device option.
+   
+ ![InstallESXi](images/Create-VM-6.png)
+
+ 8. Once the VM has been created, you can try to run the VM for guest OS installation. In order to do this, click the **VM** icon in the left pane of the web interface, right click the VM and in the context menu select **Power > Power on**.
+
+ ![InstallESXi](images/Create-VM-7.png)
+ 
+9. Encountered an error while attempting to power on the virtual machine. This marks the end of our lab session. I've exhausted all available options. Any suggestions or feedback are welcome.
+
+![InstallESXi](images/Finish-lab.png)
+
+   
