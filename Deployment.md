@@ -261,16 +261,17 @@ Since our new NAT-Switch has not a DHCP Server attached to it, we will get APIPA
 
 ![InstallESXi](images/Configuring-network-settings-2.png)
 
-4. Select "Set Static IPv4 address and network configuration:" via the up/down arrow and click on **Space** to mark selected.  Choose an IP address except the 192.168.100.1 from the range configured in step 4, in our case it's 192.168.100.0/24.
+4. Select "Set Static IPv4 address and network configuration:" via the up/down arrow and click on **Space** to mark selected.  Choose an IP address except the 192.168.100.1 from the range configured in step 4, in our case it's 192.168.100.0/24. Press **Enter** to continue.
+   
 **PS: 192.168.100.1 is used for the vNIC**
 
 ![InstallESXi](images/Configuring-network-settings-3.png)
 
-5. Click **Enter** once done then click **ESC** and **Y** to save configuration. Click **ESC** to logout once done. 
+5. Click **ESC** and **Y** to save configuration. 
 
 ![InstallESXi](images/Configuring-network-settings-4.png)
 
-6. You will get similar to the screen below
+6. Click **ESC** to logout once done. You will get similar to the screen below
 
 ![InstallESXi](images/Configuring-network-settings-5.png)
 
