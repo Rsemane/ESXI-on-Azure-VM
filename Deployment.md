@@ -195,5 +195,25 @@ native drivers only, excluding legacy VMKLinux drivers.
 . This can result in IDE disks not being detected,
 included or loaded.
 
+
+**PS: If ignoreHeadless=TRUE is not set during the boot up, you will get stuck to the screen below**
+
+![InstallESXi](images/"Error Message - Installing ESXi if ignoreheadless is not set".png)
+
+
+2. When the installer has been loaded, you will see a welcome screen. Press **Enter** to continue.
+   
+![InstallESXi](images/Installing-ESXI-2.png)
+
+3. Press **F11** to accept the license agreement and continue.
+   
+![InstallESXi](images/Installing-ESXI-3.png)
+
+4. Select a disk to install ESXi on. There is a 30GB disk attached to the VM in our case. Press **Enter** to continue.
+
+![InstallESXi](images/Installing-ESXI-4.png)
+
+
+
 ## Step : Create VMs Inside ESXi
 ...
