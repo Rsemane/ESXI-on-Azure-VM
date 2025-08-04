@@ -164,13 +164,13 @@ Choose the name of the VSwitch created in step 5. In my case is NAT-Switch
 ![SettingVM](images/Settings-VM-5.png)
 
 
-## Step : Enable Nested Virtualization
+## Step 7 : Enable Nested Virtualization
 On Azure VM created, you have inside it ESXi VM or another OS + Hyper-V (level 3 - Architecture Diagram), pick up the name of the VM and use the command below on the host (level 2 - Architecture Diagram) 
 ```powershell
 Set-VMProcessor -VMName "<vm-name>" -ExposeVirtualizationExtensions $true
 ```
 
-## Step : Install and Configure ESXi on the Hyper-V
+## Step 8 : Install and Configure ESXi on the Hyper-V
 1. When booting ESXi on a virtual machine, it may incorrectly detect the environment as headless—lacking a local console or video output. To bypass this and proceed with installation, you must manually add a boot parameter. Once the ESXi installer begins to load, press **TAB** at the boot prompt.
 This will allow you to modify the boot options. Append the following parameter to the boot command line: ignoreHeadless=true.
 
@@ -196,9 +196,9 @@ native drivers only, excluding legacy VMKLinux drivers.
 included or loaded.
 
 
-**PS: If ignoreHeadless=TRUE is not set during the boot up, you will get stuck to the screen below**
+**Info: If ignoreHeadless=TRUE is not set during the boot up, you will get stuck to the screen below**
 
-![InstallESXi](images/"Error Message - Installing ESXi if ignoreheadless is not set".png)
+![InstallESXi](images/ErrorMessage-InstallingESXiifignoreheadlessisnotset.png)
 
 
 2. When the installer has been loaded, you will see a welcome screen. Press **Enter** to continue.
@@ -213,7 +213,28 @@ included or loaded.
 
 ![InstallESXi](images/Installing-ESXI-4.png)
 
+5. Choose the Keyboard Language. Press **Enter** to continue.
 
+
+![InstallESXi](images/Installing-ESXI-5.png)
+
+6. Enter a root password, confirm the password, and press **Enter**.
+
+![InstallESXi](images/Installing-ESXI-6.png)
+
+**Info: if you did not follow Step 7 : Enable Nested Virtualization, you will get the screenshot below**
+
+![InstallESXi](images/ErrorMessage-InstallingESXiifnestedvirtnotenabled.png)
+
+7. The system warns you that a disk must be repartitioned. Press **F11** to begin the ESXi installation.
+
+![InstallESXi](images/Installing-ESXI-7.png)
+
+8. Wait until the installation process is finished.
+
+![InstallESXi](images/Installing-ESXI-7.png)
+
+9. 
 
 ## Step : Create VMs Inside ESXi
 ...
