@@ -27,7 +27,7 @@ For detailed deployment steps with screenshots, see Deployment.md
 ## Resources
 - ESXi ISO
 - Azure VM specs
-- Networking setup
+
   
 # Conclusion
 Setting up an environment to run the ESXi hypervisor within a Hyper-V virtual machine is a complex and unsupported configuration by most vendors. While it can be done for educational or testing purposes, it should never be used in production. Proceeding with such a setup is entirely at your own risk. What worked successfully in an on-premises environment did not translate well to an Azure VM. Nonetheless, testing and encountering issues is an essential part of the learning process. All suggestions and feedback are welcome.
