@@ -244,6 +244,43 @@ included or loaded.
 ![InstallESXi](images/Installing-ESXI-10.png)
 
 
+## Configuring Network Settings
+
+Since our new NAT-Switch has not a DHCP Server attached to it, we will get APIPA (Automatic Private Internet Protocol Addressing) IP 169.254.X.X
+
+ 
+1. Click on **F2** -> enter your root password
+
+![InstallESXi](images/Configuring-network-settings-0.png)
+
+2. Configure Management Network and click **Enter**
+
+![InstallESXi](images/Configuring-network-settings-1.png)
+
+3. IPv4 Configuration and click **Enter**
+
+![InstallESXi](images/Configuring-network-settings-2.png)
+
+4. Select "Set Static IPv4 address and network configuration:" via the up/down arrow and click on **Space** to mark selected.  Choose an IP address except the 192.168.100.1 from the range configured in step 4, in our case it's 192.168.100.0/24.
+**PS: 192.168.100.1 is used for the vNIC**
+
+![InstallESXi](images/Configuring-network-settings-3.png)
+
+5. Click **Enter** once done then click **ESC** and **Y** to save configuration. Click **ESC** to logout once done. 
+
+![InstallESXi](images/Configuring-network-settings-4.png)
+
+6. You will get similar to the screen below
+
+![InstallESXi](images/Configuring-network-settings-5.png)
+
+
+
+
+
+
+
+
 
 
 ## Step : Create VMs Inside ESXi
