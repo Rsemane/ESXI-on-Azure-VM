@@ -222,7 +222,7 @@ included or loaded.
 
 ![InstallESXi](images/Installing-ESXI-6.png)
 
-**Info: if you did not follow Step 7 : Enable Nested Virtualization, you will get the screenshot below**
+**Info: if you did not follow Step 7 : Enable Nested Virtualization, you will get the screenshot below. Click **Enter** to continue. You will be able to continue the installation but you will blocked later on while creating VMs on ESXi.**
 
 ![InstallESXi](images/ErrorMessage-InstallingESXiifnestedvirtnotenabled.png)
 
@@ -232,9 +232,19 @@ included or loaded.
 
 8. Wait until the installation process is finished.
 
-![InstallESXi](images/Installing-ESXI-7.png)
+![InstallESXi](images/Installing-ESXI-8.png)
 
-9. 
+9. ESXi installed successfully. To remove the ISO and boot up from DISK where it was installed. Click on **Media** in hyper-V Manager menu -> **DVD Drive** -> **Eject**. Click **Enter** to Reboot.
+
+![InstallESXi](images/Installing-ESXI-9.png)
+
+
+10. In order not to stuck on the message "Relocating modules and starting up the kernel ..." during booting up. Click on Shift+o while booting and add the command ignoreHeadless=TRUE
+
+![InstallESXi](images/Installing-ESXI-10.png)
+
+
+
 
 ## Step : Create VMs Inside ESXi
 ...
