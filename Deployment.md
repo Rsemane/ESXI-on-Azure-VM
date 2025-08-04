@@ -305,7 +305,7 @@ Since our new NAT-Switch has not a DHCP Server attached to it, we will get APIPA
 
  ![InstallESXi](images/Create-VM-3.png)
 
-5. Customize your settings. Set the parameters of virtual hardware. There are two options available for CD/DVD drive used by VM: Host device and ESXi datastore. Use the second option and upload the ISO installation image  of the operating system to the local datastore on the ESXi host.
+5. Customize your settings. Set the parameters of virtual hardware. There are two options available for CD/DVD drive used by VM: Host device and ESXi datastore. Use the second option and upload the ISO installation image  of the operating system to the local datastore on the ESXi host. Click **Next**
 
   ![InstallESXi](images/Create-VM-4.png)
 
