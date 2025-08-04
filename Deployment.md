@@ -164,17 +164,6 @@ Choose the name of the VSwitch created in step 5. In my case is NAT-Switch
 ![SettingVM](images/Settings-VM-5.png)
 
 
-
-
-
-
-
-
-------------------------
-
-
-
-
 ## Step : Enable Nested Virtualization
 On Azure VM created, you have inside it ESXi VM or another OS + Hyper-V (level 3 - Architecture Diagram), pick up the name of the VM and use the command below on the host (level 2 - Architecture Diagram) 
 ```powershell
@@ -182,7 +171,12 @@ Set-VMProcessor -VMName "<vm-name>" -ExposeVirtualizationExtensions $true
 ```
 
 ## Step : Install and Configure ESXi on the Hyper-V
-...
+1. When booting ESXi on a virtual machine, it may incorrectly detect the environment as headless—lacking a local console or video output. To bypass this and proceed with installation, you must manually add a boot parameter. Once the ESXi installer begins to load, press **TAB** at the boot prompt.
+This will allow you to modify the boot options. Append the following parameter to the boot command line: ignoreHeadless=true.
+
+**PS:Also using TAB is different than using SHIFT+o. Because while using shitft+o it don't detect the disk and the ESXi will run as live image.**
+
+![InstallESXi](images/Installing-ESXI-1.png)
 
 ## Step : Create VMs Inside ESXi
 ...
