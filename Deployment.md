@@ -165,7 +165,7 @@ Choose the name of the VSwitch created in step 5. In my case is NAT-Switch
 
 
 ## Step 7 : Enable Nested Virtualization
-On Azure VM created, you have inside it ESXi VM or another OS + Hyper-V (level 3 - Architecture Diagram), pick up the name of the VM and use the command below on the host (level 2 - Architecture Diagram) 
+On Azure VM created, you have inside it ESXi VM or another OS + Hyper-V (level 2 - Architecture Diagram), pick up the name of the VM and use the command below on the host (level 1 - Architecture Diagram) 
 ```powershell
 Set-VMProcessor -VMName "<vm-name>" -ExposeVirtualizationExtensions $true
 ```
