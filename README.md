@@ -26,8 +26,9 @@ For detailed deployment steps with screenshots, see Deployment.md
 
 ## [Resources](Resources.md)
 
-1. ESXi ISO 
-2. Azure VM specs 
+- ESXi ISO
+- Azure VM specs
+- Network Configuration
 
 
   
