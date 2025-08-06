@@ -15,7 +15,7 @@ The following diagram illustrates the nested ESXi deployment on Azure:
 
 ![Architecture Diagram](images/Architecture-Diagram.png)
 
-# 📦 Deployment Guide [Go to Deployment Instructions](Deployment.md)
+# 📦 [Deployment Guide](Deployment.md)
 Main problem in this deployment is when running ESXI ISO not customised, you will get a message during installation :
 "No compatible network adapter found. Please consult the product's Hardware Compatibility Guide (HCG) for list of supported adapters." 
 
