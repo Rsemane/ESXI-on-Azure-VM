@@ -91,7 +91,7 @@ New-NetIPAddress -IPAddress 192.168.100.1 -PrefixLength 24 -InterfaceAlias "vEth
 ```
 ![vswitchnat](images/Networkhyper-4.png) 
 
-**The steps above is like you have a network card and you put a static IP inside the TCP/IPv4 network settings.**
+**The steps outlined above are similar to configuring a network card by assigning a static IP address within the TCP/IPv4 settings.**
 ![vswitchnat](images/Networkhyper-3.png) 
 
 4. **Create Network Natting**
