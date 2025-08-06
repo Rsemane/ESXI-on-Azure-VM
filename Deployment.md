@@ -104,7 +104,7 @@ New-NetNat -Name "NATNetwork" -InternalIPInterfaceAddressPrefix 192.168.100.0/24
 
 
 ## Step 5: Creating ESXI VM on the Hyper-V
-**Prerequisite:** Download Custom ESXi ISO image from resources. In this Image you have the net-tulip driver that works with hyper-V. The Image is done by ESXI Customizer tool by Alex Lopez. 
+**Prerequisite:** Download Custom ESXi ISO image from resources. In this Image you have the net-tulip driver that works with hyper-V. The Image is done with ESXI Customizer tool by Alex Lopez. 
 1. Open Hyper-V manager, click Action > New > Virtual Machine.
 ![CreatingVM](images/Creating-ESXI-VM-1.png) 
 
