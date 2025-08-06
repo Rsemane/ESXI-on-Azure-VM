@@ -1,7 +1,7 @@
 # ESXI-on-Azure-VM
-VMware ESXi in a nested virtualization setup on Azure. </br>
-Run ESXi on Azure VM – Step-by-Step Guide to Nested Virtualization. </br>
-Deploy VMware ESXi in a nested Azure VM with this comprehensive guide. Learn how to configure virtualization, networking, and storage to build your own cloud lab. </br>
+- VMware ESXi in a nested virtualization setup on Azure.
+- Run ESXi on Azure VM – Step-by-Step Guide to Nested Virtualization. 
+- Deploy VMware ESXi in a nested Azure VM with this comprehensive guide. Learn how to configure virtualization, networking, and storage to build your own cloud lab.
 
 
 # Scenario: Running ESXi or Hyper-V with Full Administrative Control on Azure
