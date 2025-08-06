@@ -7,7 +7,7 @@ https://1drv.ms/u/c/5c4ee44f56a942bf/EUtcfc7ad5FMmo7hcMuJVVwBYXRsSjBoEPkhbcAb_uw
 https://learn.microsoft.com/en-us/answers/questions/813416/how-do-i-know-what-size-azure-vm-supports-nested-v
 
 ## Network configuration
- $switchName = "test7" 
+ $switchName = "test7" </br>
  New-VMSwitch -Name $switchName -SwitchType Internal 
 New-NetNat –Name $switchName –InternalIPInterfaceAddressPrefix 10.6.0.0/24 
  $ifIndex = (Get-NetAdapter | ? {$_.name -like "*$switchName)"}).ifIndex 
