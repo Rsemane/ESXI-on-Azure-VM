@@ -18,7 +18,7 @@ Note: All other settings remain at their default values. Make sure to enable RDP
    
 ![ConnecttoVM](images/connect-rdp-3.png)
 
-4. Click on **Yes**
+3. Click on **Yes**
    
 ![ConnecttoVM](images/connect-rdp-6.png)
 
@@ -27,23 +27,23 @@ Note: All other settings remain at their default values. Make sure to enable RDP
    
 ![ConnecttoVM](images/connect-rdp-1.png)
 
-3. Click on **Download RDP file**
+2. Click on **Download RDP file**
    
 ![ConnecttoVM](images/connect-rdp-2.png)
 
-5. Click on **Keep** to download the file
+3. Click on **Keep** to download the file
    
 ![ConnecttoVM](images/download-rdp-file.png)
 
-7. Open the file and click on **Connect**
+4. Open the file and click on **Connect**
    
 ![ConnecttoVM](images/connect-rdp-4.png)
 
-9. Fill your credentials and then click on **OK**
+5. Fill your credentials and then click on **OK**
     
 ![ConnecttoVM](images/connect-rdp-5.png)
 
-11. Click on **Yes**
+6. Click on **Yes**
    
 ![ConnecttoVM](images/connect-rdp-6.png)
 
