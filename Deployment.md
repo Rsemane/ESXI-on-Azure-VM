@@ -188,11 +188,9 @@ are loaded depending on the boot method:
 drivers, which are deprecated but still present in some custom builds.
 - If your ISO includes legacy support, TAB might trigger detection of older IDE disks.
  ##### Shift+O Boot (Modern Boot Option)
-1. Shift+O is used to append kernel parameters in the newer ESXi bootloader.
-2. If your custom ISO is built on a newer ESXi version (e.g., 7.x or 8.x), it may default to
-native drivers only, excluding legacy VMKLinux drivers.
-3. This can result in IDE disks not being detected,
-included or loaded.
+- Shift+O is used to append kernel parameters in the newer ESXi bootloader.
+- If your custom ISO is built on a newer ESXi version (e.g., 7.x or 8.x), it may default to native drivers only, excluding legacy VMKLinux drivers.
+- This can result in IDE disks not being detected, included or loaded.
 
 
 **Info: If ignoreHeadless=TRUE is not set during the boot up, you will get stuck to the screen below**
