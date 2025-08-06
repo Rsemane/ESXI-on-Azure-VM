@@ -182,12 +182,11 @@ This will allow you to modify the boot options. Append the following parameter t
 ### Why TAB Detects IDE Disk but Shift+O Doesn't
 This behavior likely stems from how the boot parameters are parsed and what drivers
 are loaded depending on the boot method:
- ##### TAB Boot (Legacy Bootloader Behavior)
-1. In some custom ISOs, pressing TAB allows you to edit the boot command line directly
-in a legacy isolinux/syslinux environment.
-2. This method may implicitly load legacy drivers, including VMKLinux-based IDE
+ ##### TAB Boot (Legacy Bootloader Behavior
+ - In some custom ISOs, pressing TAB allows you to edit the boot command line directly in a legacy isolinux/syslinux environment.
+- This method may implicitly load legacy drivers, including VMKLinux-based IDE
 drivers, which are deprecated but still present in some custom builds.
-3. If your ISO includes legacy support, TAB might trigger detection of older IDE disks.
+- If your ISO includes legacy support, TAB might trigger detection of older IDE disks.
  ##### Shift+O Boot (Modern Boot Option)
 1. Shift+O is used to append kernel parameters in the newer ESXi bootloader.
 2. If your custom ISO is built on a newer ESXi version (e.g., 7.x or 8.x), it may default to
